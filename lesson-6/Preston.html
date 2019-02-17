@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <Title>Climenow | Weather Conditions and Forecast</Title>
+        <meta name="description" content="Climenow Your weather Delivered to You Now">
+        <link href="https://fonts.googleapis.com/css?family=Exo+Open+Sans" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <img src="images/Climenow-logo.png" alt="Climenow logo">
+            <div class="headertext">
+                <h1>Climenow</h1>
+                <div class="subheading">Your Weather Delivered To You Now</div>
+            </div>
+            <div class="currentconditions">
+                <img src="images/Sun.png" alt="Current condition weather icon">
+                <p>Sunny</p>
+            </div>
+        </header>
+        <nav>
+            
+            <ul class="">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+
+        </nav>
+        <main>
+            <h2>The Town of Preston</h2>
+            <figure class="franklin">
+                <img src="images/franklin-original.jpeg" width="auto" height="auto";>
+                <figcaption>Preston, ID</figcaption>
+            </figure>
+            <div class="summarytext">
+                <h3>Weather Summary</h3>
+                <table>
+                    <tbody>
+                    <tr>
+                        <th>Currently:</th>
+                        <th>Sunny</th>
+                    </tr>
+                    <tr>
+                        <th>Temperature:</th>
+                        <th>76 F</th>
+                    </tr>
+                    <tr>
+                        <th>Humidity:</th>
+                        <th>69%</th>
+                    </tr>
+                    <tr>
+                        <th>Precipitation:</th>
+                        <th>0 Inches</th>
+                    </tr>
+                    <tr>
+                        <th>Wind Speed:</th>
+                        <th>5 mph</th>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="forecast">
+                <h4>High Temperature Forecast</h4>
+                <table>
+                    <thead>
+                      <tr>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                        <th>Sunday</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>89 F</th>
+                        <th>87 F</th>
+                        <th>78 F</th>
+                        <th>75 F</th>
+                        <th>72 F</th>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        
+        <footer>
+            <p id="demo"></p>
+
+            <script>
+                var d = new Date();
+                document.getElementById("demo").innerHTML = d;
+            </script>
+        </footer>
+    </body>
+</html>

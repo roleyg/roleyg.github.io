@@ -1,0 +1,91 @@
+body {
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 18px;  
+}
+
+header {
+    background-color: rgba(36,23,79);
+    text-align: center;
+    padding: .5rem;
+    color: #ffffff;
+    
+}
+
+header > img {
+    width: 150px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.headertext {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.headertext h1 {
+    font-size: 3rem;
+}
+
+.subheading {
+    font-size: 1.1rem;
+    color: #ffffff;
+    font-style: italic;
+}
+
+.currentconditions {
+    display: inline-block;
+    margin: 1rem, 0 1rem, 5rem;
+    padding: 1.2rem;
+    vertical-align: middle;
+    color: #ffffff;
+    background-color: rgba(80,54,164);
+    size: 15px;
+    border: 1pt solid rgba(36,23,79);
+    font-size: 1.1rem;
+}
+
+main {
+    font-size: 2rem;
+    color: black;
+    display: inline-block;
+}
+
+.townphoto {
+    padding: .5rem;
+    vertical-align: middle;
+    size: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(94,94,91);
+}
+
+li {
+    display: inline;
+    float: left;
+    border-right: 1px solid #bbbbbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
