@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <Title>Climenow | Weather Conditions and Forecast</Title>
+        <meta name="description" content="Climenow Your weather Delivered to You Now">
+        <link href="https://fonts.googleapis.com/css?family=Exo+Open+Sans" rel="stylesheet">
+        <link href="css/stylesCenter.css" rel="stylesheet">
+        <SCRIPT LANGUAGE="JavaScript">
+        function windChill(form) {
+            wind=eval(form.wind.value);
+            temp=eval(form.temp.value);
+            chill=(0.0817*(3.71*(Math.pow(wind, 0.5))+
+            5.81-0.25*wind)*(temp-91.4)+91.4);
+            form.windchill.value = chill;
+        }
+        </script>
+    </head>
+
+    <body>
+        <header>
+            <img src="images/Climenow-logo.png" alt="Climenow logo">
+            <div class="headertext">
+                <h1>Climenow</h1>
+                <div class="subheading">Your Weather Delivered To You Now</div>
+            </div>
+            <div class="currentconditions">
+                <img src="images/Sun.png" alt="Current condition weather icon">
+                <p>Sunny</p>
+            </div>
+        </header>
+        <nav>
+            
+            <ul class="">
+                <li><a href="prestonHome.html" id="onlink">Home</a></li>
+                <li><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="stormCenter.html" id="onlink">Storm Center</a></li>
+                <li><a href="prestonGallery.html" id="onlink">Gallery</a></li>
+            </ul> 
+
+        </nav>
+        <main>
+            <p>Thank you for your submission. If there are any further questions a member of our team will be in contact with you.</p>
+        </main>
+        
+        <footer>
+            <p id="demo"></p>
+
+            <script>
+                var d = new Date();
+                document.getElementById("demo").innerHTML = d;
+            </script>
+        </footer>
+    </body>
+</html>

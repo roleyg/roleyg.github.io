@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <Title>Climenow | Weather Conditions and Forecast</Title>
+        <meta name="description" content="Climenow Your weather Delivered to You Now">
+        <link href="https://fonts.googleapis.com/css?family=Exo+Open+Sans" rel="stylesheet">
+        <link href="css/stylesCenter.css" rel="stylesheet">
+        <SCRIPT LANGUAGE="JavaScript">
+        function windChill(form) {
+            wind=eval(form.wind.value);
+            temp=eval(form.temp.value);
+            chill=(0.0817*(3.71*(Math.pow(wind, 0.5))+
+            5.81-0.25*wind)*(temp-91.4)+91.4);
+            form.windchill.value = chill;
+        }
+        </script>
+    </head>
+
+    <body>
+        <header>
+            <img src="images/Climenow-logo.png" alt="Climenow logo">
+            <div class="headertext">
+                <h1>Climenow</h1>
+                <div class="subheading">Your Weather Delivered To You Now</div>
+            </div>
+            <div class="currentconditions">
+                <img src="images/Sun.png" alt="Current condition weather icon">
+                <p>Sunny</p>
+            </div>
+        </header>
+        <nav>
+            
+            <ul class="">
+                <li><a href="prestonHome.html" id="onlink">Home</a></li>
+                <li><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="stormCenter.html" id="onlink">Storm Center</a></li>
+                <li><a href="prestonGallery.html" id="onlink">Gallery</a></li>
+            </ul> 
+
+        </nav>
+        <main>
+            <h2>Potential Storm Report</h2>
+            <p>See unusual weather or an unreported storm? Please fill out this form and submit it to let us know.</p>
+            <form action="thanks.html" method="post">
+                Full Name:<br>
+                <input type="text" name="firstname"><br><br>
+                Email:<br>
+                <input type="email" name="emailaddress"><br><br>
+                Phone Number:<br>
+                <input type="tel" name="usrtel"><br><br>
+                ZIP Code:<br>
+                <input type="number" name="zip"><br><br>
+                Storm Date:<br>
+                <input type="date" name="stormdate"><br><br>
+                Storm Type:<br>
+                <input list="storms" name="stormtype"><br><br>
+                <datalist id="storms">
+                    <option value="Rain">
+                    <option value="Snow">
+                    <option value="Hail">
+                    <option value="Thunderstorm">
+                    <option value="Flash Flood">
+                    <option value="Tornado">
+                    <option value="Hurricane">
+                    </datalist>
+                Storm Severity:<br>
+                <input type="range" name="stormseverity" min="1" max="10"><br><br>
+                Storm Region:<br>
+                <select name="stormregion" form="region">
+                    <option value="Preston">Preston</option>
+                    <option value="Soda Springs">Soda Springs</option>
+                    <option value="Fish Haven">Fish Haven</option>
+                    </select> <br><br>
+                User in Danger Level:<br>
+                <form action="/action_page.php">
+                    <input type="radio" name="danger" value="yes">Yes<br>
+                    <input type="radio" name="danger" value="maybe">Maybe<br>
+                    <input type="radio" name="danger" value="no">No<br><br>
+                Additional Information and Comments:<br>
+                <textarea rows="5" cols="50" name="comment" form="userform">
+                Enter text here...
+                </textarea>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <br><br>
+            </form>
+        </main>
+        
+        <footer>
+            <p id="demo"></p>
+
+            <script>
+                var d = new Date();
+                document.getElementById("demo").innerHTML = d;
+            </script>
+        </footer>
+    </body>
+</html>
