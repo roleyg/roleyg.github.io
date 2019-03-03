@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/stylesMain.css" rel="stylesheet">
+<link href="css/stylesLarge.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+<div class="header">
+        <img src="images/Climenow-logo.png" alt="Climenow logo">
+  <h1>Climenow</h1>
+  <div class="subheading">Your Weather Delivered To You Now</div>
+</div>
+</header>
+
+<nav>
+<div class="topnav">
+  <a href="preston-home.html" id="onlink">Home</a>
+  <a href="#">Preston</a>
+  <a href="#">Soda Springs</a>
+  <a href="#">Fish Haven</a>
+  <a href="storm-center.html" id="onlink">Storm Center</a>
+  <a href="preston-gallery.html" id="onlink">Gallery</a>
+</div>
+</nav>
+
+  <div class="column top">
+    <h2>Weather Summary</h2>
+    <form id="windChill" action="" method=post name=windform>
+            <center>
+            <table>
+            <tr>
+            <td align=center>
+            Wind Speed (MPH) =
+            </td>
+            <td align=center>
+            <input type=text name=wind value="" size=6>
+            </td>
+            </tr>
+            <tr>
+            <td align=center>
+            Forecast Temperature (ºF) =
+            </td>
+            <td align=center>
+            <input type=text name=temp value="" size=6>
+            </td>
+            </tr>
+            <tr>
+            <td colspan=2 align=center>
+            <br>
+            <input type=button value="Wind Chill" onclick="windChill(this.form)">
+            <p>
+            <input name=windchill type=text value="" size=10> º F
+            </td>
+            <tr>
+            </table>
+            </center>
+        </form>
+  </div>
+
+  <div class="column middle">
+    <h2>The Town of Preston</h2>
+    <img src="images/Town-photo.jpeg" width="500px" height="400px";>
+    <figcaption>Preston, ID</figcaption>
+  </div>
+  
+  <div class="column side">
+    <h2></h2>
+  </div>
+</div>
+
+<footer>
+        <p id="demo"></p>
+
+        <script>
+            var d = new Date();
+            document.getElementById("demo").innerHTML = d;
+        </script>
+</footer>
+  
+</body>
+</html>

@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  /* Style the header */
+  .header {
+    background-color: rgba(80, 54, 164);
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    height: auto;
+  }
+  
+  .header > img {
+    width: 150px;
+    height: auto;
+    vertical-align: middle;
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: rgba(94,94,91);
+    display: block;
+    width: 200px;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    padding: 12px;
+    width: 200px;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #4CAF50;
+    color: black;
+  }
