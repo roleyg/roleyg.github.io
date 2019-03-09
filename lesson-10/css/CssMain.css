@@ -157,6 +157,7 @@ div picture img {
 
 main > picture img {
     width: 100%;
+    text-align: center;
 }
 
 section.forecast {
@@ -169,10 +170,12 @@ article {
     overflow: auto;
     padding: 30px;
     border: 1px solid rgba(94 94, 91);
+    text-align: center;
 }
 
 article  p{
-    padding: 10px
+    padding: 10px;
+    text-align: center;
 }
 
 article p.town-article img {

@@ -2,6 +2,7 @@
     /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
     article p.town-article img {
         width: 50%;
+        text-align: center;
     }
 
     #towncontainer {
