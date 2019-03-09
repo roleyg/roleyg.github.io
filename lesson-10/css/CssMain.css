@@ -1,11 +1,9 @@
-/* This main css file contains the default rules and is geared toward the small/phone view */
+/* This main css file is for the small view/main view*/
 
 * {
     box-sizing: border-box;
     margin: auto;
 }
-
-/* This wildcard applies to all elements ensuring a box layout model */
 
 body {
     font-size: 16px;
@@ -169,7 +167,6 @@ section.forecast {
 article {
     clear: both;
     overflow: auto;
-    /*border: 1px solid #56c920;*/
     padding: 30px;
     border: 1px solid rgba(94 94, 91);
 }
