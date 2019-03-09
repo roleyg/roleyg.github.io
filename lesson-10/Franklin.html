@@ -1,0 +1,139 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Climenow | Your Weather Delivered Now | Franklin">
+    <meta name="author" content="Gareth Roley">
+    <title>Climenow | Weather for Franklin</title>
+    <!--Left Blank for the time being-->
+    <link rel="stylesheet" href="css/CssNormalize.css">
+    <link rel="stylesheet" href="css/CssMain.css">
+    <link rel="stylesheet" href="css/CssMedium.css">
+    <link rel="stylesheet" href="css/CssLarge.css">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen%7CRoboto%7CRoboto+Slab" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-115450533-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-115450533-1');
+
+    </script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <img src="images/Climenow-logo.png" alt="Climenow Logo">
+            <h1>Climenow</h1>
+        </div>
+        <div class="subheading">Your Weather Delivered Now | Franklin
+        </div>
+    </header>
+
+    <nav>
+        <button class="hamburger" onclick="toggleNavMenu()">☰</button>
+        <ul class="navigation">
+            <!--Current set to return to main index until other pages are built-->
+            <li><a href="HomePreston.html">Home</a></li>
+            <li class="active"><a href="Franklin.html">Franklin</a></li>
+            <li><a href="#">Greenville</a></li>
+            <li><a href="#">Springfield</a></li>
+            <li><a href="StormCenter.html">Storm Center</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>The Town of Franklin</h2>
+        <figure>
+            <img src="images/FranklinStreet.jpg" alt="Franklin Main Street">
+        </figure>
+        <div class="container">
+            <section class="weatherdata">
+                <h3>Weather Data</h3>
+                <div class="highlow">
+                    <p>Current Temp: <span id="currentTemp"></span>°F</p>
+                    <p>High: <span id="highT"></span>°F</p>
+                    <p>Low: <span id="lowT"></span>°F</p>
+                </div>
+                <div class="current">
+                    <span id="currentWeather"></span>
+                    <picture>
+                        <img id="w_icon" src="images/Sun.png">
+                    </picture>
+                </div>
+                <div class="conditions">
+                    <p>Precipitation: <span id="precipitation"></span>"</p>
+                    <p>Wind Speed: <span id="windSpeed">5</span> mph NW</p>
+                    <p>Average Windchill: <span id="windChill"></span>°F</p>
+                </div>
+                <div class="forecastText">
+                    Forecast: <span id="textForecast"></span>
+                </div>
+            </section>
+
+            <section class="forecast">
+                <h3>10 Day Forecast</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day 1</th>
+                            <th>Day 2</th>
+                            <th>Day 3</th>
+                            <th>Day 4</th>
+                            <th>Day 5</th>
+                            <th>Day 6</th>
+                            <th>Day 7</th>
+                            <th>Day 8</th>
+                            <th>Day 9</th>
+                            <th>Day 10</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>89°F</td>
+                            <td>87°F</td>
+                            <td>78°F</td>
+                            <td>75°F</td>
+                            <td>72°F</td>
+                            <td>72°F</td>
+                            <td>79°F</td>
+                            <td>83°F</td>
+                            <td>85°F</td>
+                            <td>89°F</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+
+        <article>
+            <h3>Weather Warning Advisory</h3>
+            <p class="town-article">
+                <img src="images/Town-photo.jpeg" alt="Town of Franklin"> There are currently no storm warnings. No advisory is available. Please check back for the latest weather updates.
+            </p>
+        </article>
+
+    </main>
+
+    <footer>
+        <aside>
+                Email: Climenow@gmail.com | Phone: (555) 555-5555 | 10 N Main St. Franklin
+        </aside>
+        <p class="footer-bar"> Climenow | Weather for Southeast Idaho <span id="currentdate">Saturday, 9 March 2019</span></p>
+    </footer>
+    <script src="js/currentdate.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/wu-weather.js"></script>
+    <script src="js/wu-Test-Weather.js"></script>
+
+
+
+</body></html>

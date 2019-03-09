@@ -1,0 +1,43 @@
+#grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-gap: 20px;
+    max-width: 1000px;
+}
+
+#grid div {
+    min-height: 0;
+    min-width: 0;
+}
+
+#grid div img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+#grid div img:hover {
+    box-shadow: none;
+}
+
+@media only screen and (min-width: 37.5em) {
+    #grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #grid div img:hover {
+        box-shadow: none;
+    }
+
+}
+
+@media only screen and (min-width: 64em) {
+    #grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #grid div img:hover {
+        box-shadow: 5px 5px 10px #eac67a;
+    }
+}

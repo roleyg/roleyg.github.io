@@ -1,0 +1,36 @@
+@media only screen and (min-width: 64em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    article p.town-article img {
+        width: 50%;
+    }
+
+    #towncontainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 1fr;
+    }
+
+    #towncontainer li{
+        text-align: left;
+    }
+
+    #towncontainer div:nth-child(odd){
+        flex-direction: column;
+        flex: 1;
+    }
+
+    #towncontainer div {
+        flex-direction: column;
+    }
+
+    #towncontainer div span {
+        padding: 10px;
+        margin: 15px;
+        font-size: 1em;
+    }
+
+    #towncontainer div img {
+        max-height: 250px;
+        width: auto;
+    }
+}

@@ -1,0 +1,231 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* {
+    box-sizing: border-box;
+    margin: auto;
+}
+
+/* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+    min-width: 320px;
+    /* Declare the base font-family - from google font api or other */
+    font-family: Arial, Helvetica, Trebuchet;
+}
+
+header,
+nav,
+main,
+footer {
+    /* the comma means apply the following CSS declarations to all of the listed elements */
+    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    max-width: 1000px;
+    text-align: center;
+}
+
+header {
+    background: rgba(80, 54, 164);
+}
+
+.container {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0px;
+    flex-wrap: nowrap;
+}
+
+header h1 {
+    color: #f1f1f1;
+    margin: 10px;
+}
+
+header img {
+    margin: 0;
+    height: 49px;
+}
+
+header .subheading {
+    color: #f1f1f1;
+}
+
+nav {}
+
+nav button {}
+
+.hamburger {
+    position: absolute;
+    top: 1px;
+    right: 1%
+}
+
+.navigation {
+    list-style: none;
+    padding-left: 0;
+}
+
+.navigation li {
+    display: none;
+}
+
+#towncontainer {
+    padding: 20px;
+    display: none;
+}
+
+main {}
+
+main h2 {
+    color: #067bc2;
+    margin: 20px;
+}
+
+main figure {
+    margin: 0 0 2% 2%;
+    width: 96%;
+}
+
+main figure img {
+    width: 100%;
+}
+
+form.formContainer{
+    margin: 1em 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 5px;
+}
+
+fieldset {
+    margin: 5px;
+    border-color: rgba(94 94, 91);
+    background: #984b43;
+    border-radius: .9em;
+}
+
+legend {
+    margin-left: 0%;
+    text-align: left;
+    color: #f1f1f1;
+    background: rgba(80, 54, 164);
+    border-radius: .4em;
+}
+
+label, form > fieldset > div {
+    text-align: left;
+    display: block;
+    margin: .5em;
+    padding-top: 0em;
+    padding-bottom: .2em;
+}
+
+
+label > span{
+    display:block;
+}
+
+label label {
+    margin: 0;
+    display:inline-block;
+}
+
+textarea {
+    height: 5em;
+    width: 100%;
+    resize: none;
+}
+
+form > span
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    max-width: 200px;
+}
+
+section {
+    border: 1px solid rgba(80, 54, 164);
+}
+
+div picture img {
+    height: 20px;
+}
+
+main > picture img {
+    width: 100%;
+}
+
+section.forecast {
+    display: none;
+}
+
+
+article {
+    clear: both;
+    overflow: auto;
+    /*border: 1px solid #56c920;*/
+    padding: 30px;
+    border: 1px solid rgba(94 94, 91);
+}
+
+article  p{
+    padding: 10px
+}
+
+article p.town-article img {
+    /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+    width: 100%;
+    height: auto;
+    /* fill the page in the small/phone view */
+}
+
+table * {
+    border: 1px solid black;
+    background: #acbdba;
+}
+
+footer {
+    background: rgba(80, 54, 164);
+    padding: 1%;
+}
+
+footer aside {
+    font-size: .8em;
+}
+
+footer > p {
+    font-size: .75em;
+}
+
+
+/* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
+
+@media only screen and (max-width: 37.5em) {
+    .navigation.responsive {
+        position: relative;
+    }
+    .navigation.responsive li {
+        background-color: rgba(94 94, 91);
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 2px 0;
+        border: 1px solid rgba(80, 54, 164);
+    }
+    .navigation.responsive li a {
+        padding: 1rem;
+        text-align: center;
+    }
+    .navigation.responsive li a:hover {
+        color: #f1f1f1;
+        background-color: #067bc2;
+    }
+}
