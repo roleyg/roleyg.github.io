@@ -51,61 +51,56 @@
     <main>
         <h2>The Town of Preston</h2>
         <figure>
-            <img src="images/FranklinStreet.jpg" alt="Franklin Main Street">
+            <img src="images/FranklinStreet.jpg" alt="Franklin Main Street" height="400px" width="200px">
         </figure>
         <div class="container">
             <section class="weatherdata">
                 <h3>Weather Summary</h3>
                 <div class="highlow">
-                    <p>Current Temp: <span id="currentTemp"></span>°F</p>
-                    <p>High: <span id="highT"></span>°F</p>
-                    <p>Low: <span id="lowT"></span>°F</p>
+                    <p>Currently <span id="currentTemp">47</span>°F</p>
+                    <p>High: <span id="highT">49</span>°F</p>
+                    <p>Low: <span id="lowT">24</span>°F</p>
                 </div>
                 <div class="current">
                     <span id="currentWeather"></span>
-                    <picture>
-                        <img id="w_icon" src="images/Sun.png">
-                    </picture>
                 </div>
                 <div class="conditions">
-                    <p>Precipitation: <span id="precipitation"></span>"</p>
-                    <p>Wind Speed: <span id="windSpeed">5</span> mph NW</p>
-                    <p>Average Windchill: <span id="windChill"></span>°F</p>
+                    <p>Precipitation: <span id="precipitation">0</span>"</p>
+                    <p>Wind Speed: <span id="windSpeed">25</span> mph NW</p>
                 </div>
                 <div class="forecastText">
-                    Forecast: <span id="textForecast"></span>
                 </div>
             </section>
 
             <section class="forecast">
-                <h3>10 Day Forecast</h3>
+                <h3>5 Day Forecast</h3>
                 <table>
                     <thead>
                         <tr>
-                            <th>Day 1</th>
-                            <th>Day 2</th>
-                            <th>Day 3</th>
-                            <th>Day 4</th>
-                            <th>Day 5</th>
-                            <th>Day 6</th>
-                            <th>Day 7</th>
-                            <th>Day 8</th>
-                            <th>Day 9</th>
-                            <th>Day 10</th>
+                            <th id="5day1"></th>
+                            <th id="5day2"></th>
+                            <th id="5day3"></th>
+                            <th id="5day4"></th>
+                            <th id="5day5"></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>89°F</td>
-                            <td>87°F</td>
-                            <td>78°F</td>
-                            <td>75°F</td>
-                            <td>72°F</td>
-                            <td>72°F</td>
-                            <td>79°F</td>
-                            <td>83°F</td>
-                            <td>85°F</td>
-                            <td>89°F</td>
+                                <td><img src="images/sunny.jpg" alt="sunny"
+                                    height="80" class="fiveday-image"><br>40
+                                    &deg;F</td>
+                                <td><img src="images/partlycloudy.jpg" alt="partly
+                                        cloudy" height="80" class="fiveday-image"><br>43
+                                    &deg;F</td>
+                                <td><img src="images/snow.jpg" alt="snow"
+                                        height="80" class="fiveday-image"><br>45
+                                    &deg;F</td>
+                                <td><img src="images/snow.jpg" alt="snow"
+                                        height="80" class="fiveday-image"><br>39
+                                    &deg;F</td>
+                                <td><img src="images/partlycloudy.jpg" alt="partly
+                                        cloudy" height="80" class="fiveday-image"><br>40
+                                    &deg;F</td>
                         </tr>
                     </tbody>
                 </table>
@@ -115,7 +110,7 @@
         <article>
             <h3>Weather Warning Advisory</h3>
             <p class="town-article">
-                <img src="images/Town-photo.jpeg" alt="Town of Franklin"> There are currently no storm warnings. No advisory is available. Please check back for the latest weather updates.
+                <p>There are currently no storm warnings. No advisory is available. Please check back for the latest weather updates.</p>
             </p>
         </article>
 
@@ -129,8 +124,7 @@
     </footer>
     <script src="js/currentdate.js"></script>
     <script src="js/hamburger.js"></script>
-    <script src="js/wu-weather.js"></script>
-    <script src="js/wu-Test-Weather.js"></script>
+    <script src="js/weatherapi.js"></script>
 
 
 
