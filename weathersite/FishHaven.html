@@ -1,0 +1,131 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Climenow | Your Weather Delivered Now | Franklin">
+    <meta name="author" content="Gareth Roley">
+    <title>Climenow | Weather for Franklin</title>
+    <link rel="stylesheet" href="css/CssNormalize.css">
+    <link rel="stylesheet" href="css/CssMain.css">
+    <link rel="stylesheet" href="css/CssMedium.css">
+    <link rel="stylesheet" href="css/CssLarge.css">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen%7CRoboto%7CRoboto+Slab" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-115450533-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-115450533-1');
+
+    </script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <img src="images/Climenow-logo.png" alt="Climenow Logo">
+            <h1>Climenow</h1>
+        </div>
+        <div class="subheading">Your Weather Delivered Now | Franklin
+        </div>
+    </header>
+
+    <nav>
+        <button class="hamburger" onclick="toggleNavMenu()">☰</button>
+        <ul class="navigation">
+            <li><a href="HomePreston.html">Home</a></li>
+            <li><a href="Franklin.html">Preston</a></li>
+            <li><a href="SodaSprings.html">Soda Springs</a></li>
+            <li class="active"><a href="FishHaven.html">Fish Haven</a></li>
+            <li><a href="StormCenter.html">Storm Center</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>The Town of Preston</h2>
+        <figure>
+            <img src="images/FranklinStreet.jpg" alt="Preston Main Street" height="400px" width="200px">
+        </figure>
+        <div class="container">
+            <section class="weatherdata">
+                <h3>Weather Summary</h3>
+                <div class="highlow">
+                    <p>Currently <span id="currentTemp">47</span>°F</p>
+                    <p>High: <span id="highT">49</span>°F</p>
+                    <p>Low: <span id="lowT">24</span>°F</p>
+                </div>
+                <div class="current">
+                    <span id="currentWeather"></span>
+                </div>
+                <div class="conditions">
+                    <p>Precipitation: <span id="precipitation">0</span>"</p>
+                    <p>Wind Speed: <span id="windSpeed">25</span> mph NW</p>
+                </div>
+                <div class="forecastText">
+                </div>
+            </section>
+
+            <section class="forecast">
+                <h3>5 Day Forecast</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th id="5day1"></th>
+                            <th id="5day2"></th>
+                            <th id="5day3"></th>
+                            <th id="5day4"></th>
+                            <th id="5day5"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                                <td><img src="images/sunny.jpg" alt="sunny"
+                                    height="80" class="fiveday-image"><br>40
+                                    &deg;F</td>
+                                <td><img src="images/partlycloudy.jpg" alt="partly
+                                        cloudy" height="80" class="fiveday-image"><br>43
+                                    &deg;F</td>
+                                <td><img src="images/snow.jpg" alt="snow"
+                                        height="80" class="fiveday-image"><br>45
+                                    &deg;F</td>
+                                <td><img src="images/snow.jpg" alt="snow"
+                                        height="80" class="fiveday-image"><br>39
+                                    &deg;F</td>
+                                <td><img src="images/partlycloudy.jpg" alt="partly
+                                        cloudy" height="80" class="fiveday-image"><br>40
+                                    &deg;F</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+
+        <article>
+            <h3>Weather Warning Advisory</h3>
+            <p class="town-article">
+                <p>There are currently no storm warnings. No advisory is available. Please check back for the latest weather updates.</p>
+            </p>
+        </article>
+
+    </main>
+
+    <footer>
+        <aside>
+                Email: Climenow@gmail.com | Phone: (555) 555-5555
+        </aside>
+        <p class="footer-bar"> Climenow | Weather for Southeast Idaho <span id="currentdate">Saturday, 9 March 2019</span></p>
+    </footer>
+    <script src="js/currentdate.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/weatherapi.js"></script>
+
+
+
+</body></html>

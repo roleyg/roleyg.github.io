@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Climenow | Your Weather Delivered Now | Storm Center Reporting Form">
+    <meta name="author" content="Gareth Roley">
+    <title>Climenow | Your Weather Delivered Now | Storm Center</title>
+    <link rel="stylesheet" href="css/CssNormalize.css">
+    <link rel="stylesheet" href="css/CssMain.css">
+    <link rel="stylesheet" href="css/CssMedium.css">
+    <link rel="stylesheet" href="css/CssLarge.css">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen%7CRoboto%7CRoboto+Slab" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115450533-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-115450533-1');
+
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="images/Climenow-logo.png" alt="Climenow Logo">
+            <h1>Climenow</h1>
+        </div>
+        <div class="subheading">Your Weather Delivered Now | Southeast Idaho
+        </div>
+    </header>
+
+    <nav>
+        <button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
+        <ul class="navigation">
+            <li><a href="HomePreston.html">Home</a></li>
+            <li><a href="Franklin.html">Preston</a></li>
+            <li><a href="SodaSprings.html">Soda Springs</a></li>
+            <li><a href="FishHaven.html\">Fish Haven</a></li>
+            <li class="active"><a href="StormCenter.html">Storm Center</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Storm Center</h2>
+        <form class="formContainer" action="Thanks.html">
+
+            <fieldset>
+                <legend>
+                    <span>Personal Info:</span>
+                </legend>
+                <label>
+                    <span>Full Name:</span>
+                    <input type="text" name="fullname" placeholder="John Smith" pattern="[a-zA-Z -._]{3,99}" required autofocus>
+                </label>
+                <label>
+                    <span>E-mail:</span>
+                    <input type="email" name="email" placeholder="johnsmith@example.com">
+                </label>
+                <label>
+                    <span>Phone Number:</span>
+                    <input type="tel" name="phone" placeholder="###-###-####" pattern="[0-9-]{8,20}" required>
+                </label>
+
+                <label>
+            <span>Zip Code:</span>
+                    <input type="number" name="zip" placeholder="98765" min="501" max="99999" required>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    <span>Storm Info:</span>
+                </legend>
+                <label>
+                    <span>Storm Date:</span>
+                    <input type="date" name="date">
+                </label>
+                <label>
+                    <span>Storm Type:</span>
+                    <input type="text" name="stormtype" list="storms">
+                    <datalist id="storms">
+                        <option value="flash flood"></option>
+                        <option value="hail"></option>
+                        <option value="hurricane"></option>
+                        <option value="thunderstorm"></option>
+                        <option value="tornado"></option>
+                    </datalist>
+                </label>
+                <label>
+                    <span>Storm Severity (1-10): <span id="ratingvalue">5</span></span>
+                    <input type="range" name="severity" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                </label>
+                <label>
+                    <span>Storm Region:</span>
+                    <select name="city">
+                        <option value="" disabled="disabled" selected="selected">Select Region...</option>
+                        <option value="franklin">Franklin</option>
+                        <option value="greenville">Greenville</option>
+                        <option value="springfield">Springfield</option>
+                    </select>
+                </label>
+                <div>
+                    <label>Are you in Danger?:</label>
+                    <span><input type="radio" name="danger" value="yes" checked> Yes</span>
+                    <span><input type="radio" name="danger" value="maybe"> Maybe</span>
+                    <span><input type="radio" name="danger" value="no"> No</span>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend><span>Additional Information and Comments:</span></legend>
+                <textarea name="comments"></textarea>
+            </fieldset>
+            <span>
+                <input type="submit" value="Submit" class="submitButton">
+                <input type="reset" value="Reset" onclick="adjustRating(5)">
+            </span>
+        </form>
+    </main>
+
+    <footer>
+        <aside>
+                Email: Climenow@gmail.com | Phone: (555) 555-5555 
+        </aside>
+        <p class="footer-bar"> &copy; Climenow | Weather for Southeast Idaho <span id="currentdate"></span></p>
+    </footer>
+    <script src="js/currentdate.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/rating.js"></script>
+</body>
+
+</html>

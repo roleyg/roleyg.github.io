@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  /* Style the header */
+  .header {
+    background-color: rgba(80, 54, 164);
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    height: auto;
+  }
+  
+  .header > img {
+    width: 150px;
+    height: auto;
+    vertical-align: middle;
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: rgba(94,94,91);
+    display: block;
+    width: 200px;
+    margin: auto;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    padding: 12px;
+    width: 200px;
+    margin: auto;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #4CAF50;
+    color: black;
+  }
+
+  .submit {
+      font-size: 20px;
+      font-weight: bold;
+      padding: 1px;
+      margin: 1px;
+  }
+  
+  /* Top Column */
+  .column.top {
+    margin: auto;
+    text-align: center;
+    border: solid;
+  }
+  
+  /* Left and right column */
+  .column.side {
+    width: 25%;
+    margin: auto;
+    text-align: center;
+  }
+  
+  /* Middle column */
+  .column.middle {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+  }
+  
+  /*Image and header */
+  .image {
+    text-align: center;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+      width: 100%;
+    }
+
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+      width: 100%;
+    }
+  }
