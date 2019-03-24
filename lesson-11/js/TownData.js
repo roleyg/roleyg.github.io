@@ -13,7 +13,7 @@ function populateTownData(jsonObj) {
     var towns = jsonObj['towns'];
 
     for (var i = 0; i < towns.length; i++) {
-        if (towns[i].name == 'Franklin' || towns[i].name == 'Greenville' || towns[i].name == 'Springfield') {
+        if (towns[i].name == 'Fish Haven' || towns[i].name == 'Preston' || towns[i].name == 'Soda Springs') {
             var myArticle = document.getElementById(towns[i].name);
             var myH2 = document.createElement('h2');
             var myPara1 = document.createElement('p');
