@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Climenow | Your Weather Delivered Now">
+    <meta name="author" content="Gareth Roley">
+    <title>Climenow Weather Site</title>
+    <link rel="stylesheet" href="css/CssNormalize.css">
+    <link rel="stylesheet" href="css/CssMain.css">
+    <link rel="stylesheet" href="css/CssMedium.css">
+    <link rel="stylesheet" href="css/CssLarge.css">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen%7CRoboto%7CRoboto+Slab" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-115450533-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-115450533-1');
+
+    </script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <img src="images/Climenow-logo.png" alt="Climenow Logo">
+            <h1>Climenow</h1>
+        </div>
+        <div class="subheading">Your Weather Delivered Now | Southeast Idaho
+        </div>
+    </header>
+
+    <nav>
+
+        <button class="hamburger" onclick="toggleNavMenu()">☰</button>
+        <ul class="navigation">
+            <li class="active"><a href="HomePreston.html">Home</a></li>
+            <li><a href="Franklin.html">Preston</a></li>
+            <li class="active"><a href="SodaSprings.html">Soda Springs</a></li>
+            <li><a href="FishHaven.html">Fish Haven</a></li>
+            <li><a href="StormCenter.html">Storm Center</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <h3>Home</h3>
+            <p class="town-article">
+                <img src="images/Town-photo.jpeg" alt="Town Main Photo"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta tortor vitae quam bibendum, in condimentum orci luctus. In mauris ante, placerat quis quam at, mattis convallis nunc. Integer sollicitudin id erat sed efficitur. Nullam in mattis libero. Mauris mauris quam, blandit elementum viverra et, fringilla ut metus. Mauris placerat fringilla lectus et volutpat. Quisque dapibus sodales dignissim. Nunc mattis consectetur quam, ut pharetra enim porttitor nec. Maecenas pellentesque est nisl, id tempor lectus facilisis sed.
+
+                Proin ultrices a lectus sit amet feugiat. Phasellus metus velit, iaculis pellentesque egestas et, auctor non massa. Mauris pulvinar rutrum porta. Sed dolor dui, imperdiet ut ante ut, ultrices rutrum urna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi a dignissim dolor. Fusce nisl urna, laoreet aliquam est vel, accumsan sollicitudin urna. Etiam venenatis nec purus et porta. Maecenas imperdiet feugiat justo ut facilisis.
+            </p>
+        </article>
+
+        <section id="towncontainer">
+            <div>
+                <img src="images/FranklinStreet.jpg" alt="Preston Main Street">
+                <span id="Preston"><h2>Preston</h2><p>Motto: Where you will grow!</p><p>Year Founded: 1788</p><p>Current Population: 30458</p><p>Average Rainfall: 21</p><ul></ul></span>
+            </div>
+            <div>
+                <img src="images/GreenvilleStreet.jpg" alt="Soda Springs Main Street">
+                <span id="Soda Springs"><h2>Soda Springs</h2><p>Motto: Green is our way of life.</p><p>Year Founded: 1805</p><p>Current Population: 33458</p><p>Average Rainfall: 25</p><ul></ul></span>
+            </div>
+            <div>
+                <img src="images/SpringfieldStreet.jpg" alt="Fish Haven Main Street">
+                <span id="Fish Haven"><h2>Fish Haven</h2><p>Motto: Where everyone is lifted.</p><p>Year Founded: 1826</p><p>Current Population: 17852</p><p>Average Rainfall: 17</p><ul></ul></span>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <aside>
+            Email: Climenow@gmail.com | Phone: (555) 555-5555
+        </aside>
+        <p class="footer-bar"> © Climenow | Weather for Southeast Idaho <span id="currentdate">Saturday, 9 March 2019</span></p>
+    </footer>
+    <script src="js/CurrentDate.js"></script>
+    <script src="js/Hamburger.js"></script>
+    <script src="js/TownData.js"></script>
+    <script src="js/weatherapi.js"></script>
+
+
+</body></html>
