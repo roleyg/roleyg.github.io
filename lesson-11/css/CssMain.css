@@ -209,10 +209,10 @@ footer > p {
 /* Other Class Selectors */
 
 @media only screen and (max-width: 37.5em) {
-    .navigation.responsive {
+    .selected.responsive {
         position: relative;
     }
-    .navigation.responsive li {
+    .selected.responsive li {
         background-color: rgba(94 94, 91);
         display: flex;
         flex-direction: column;
@@ -220,11 +220,11 @@ footer > p {
         margin: 2px 0;
         border: 1px solid rgba(80, 54, 164);
     }
-    .navigation.responsive li a {
+    .selected.responsive li a {
         padding: 1rem;
         text-align: center;
     }
-    .navigation.responsive li a:hover {
+    .selected.responsive li a:hover {
         color: #f1f1f1;
         background-color: #984b43;
     }
